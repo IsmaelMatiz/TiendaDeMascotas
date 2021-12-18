@@ -98,6 +98,12 @@ public class ServiciosFragment extends Fragment {
                 getActivity().startActivity(intent);
                 //Toast.makeText(getContext(), "Hola Servicios", Toast.LENGTH_SHORT).show();
                 return true;
+            case R.id.itemFavoritos:
+                Toast.makeText(getContext(), "puedes marcar un Servicio como favorito en la seccionde agregar, consultalo, marcalo como favorito y actializa", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.itemPregunta:
+                Toast.makeText(getContext(), "Para refrescar la vista desliza hacia abajo", Toast.LENGTH_SHORT).show();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

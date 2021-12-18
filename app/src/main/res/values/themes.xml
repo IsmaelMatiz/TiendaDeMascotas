@@ -6,7 +6,7 @@
         <item name="colorPrimaryVariant">@color/dark_blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Edicion del meni pop up -->
-        <item name="popupMenuBackground">@drawable/customborder</item>
+        <item name="popupMenuBackground">@color/white</item>
         <item name="android:textColorPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

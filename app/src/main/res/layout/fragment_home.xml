@@ -7,99 +7,145 @@
     android:background="@color/gray"
     tools:context=".ui.home.HomeFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorFondo"
-        android:orientation="vertical">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/customborder"
+            android:padding="10dp"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="MI TIENDA DE MASCOTAS"
-                android:textAlignment="center"
-                android:textColor="@color/colorTitulos"
-                android:textSize="20dp" />
-
-            <TextView
-                android:id="@+id/texto1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="¡Hola, Bienvenido!"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textoInfoTienda"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Mi tienda de mascotas, es la mejor forma de cuidar a tu peludo, contamos con servicios veterinarios, medicinas, alimentos, accesorios y mucho mas"
-                android:textAlignment="center" />
-
-            <LinearLayout
-
-                android:id="@+id/layoutTelefono"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="Telefono de la tienda: "
-                    android:textAlignment="textEnd" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="(+57) 555-555-255"
-                    android:textAlignment="textStart" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/boton1"
+                android:id="@+id/combos_destacados"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Mostrar informacion" />
-        </LinearLayout>
+                android:gravity="center"
+                android:text="@string/destacados"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
 
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/tituloComboAseo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <ImageView
+                    android:id="@+id/imageComboAseo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="124dp"
+                    app:srcCompat="@drawable/banner_perros_aseo_1030x310" />
+
+                <TextView
+                    android:id="@+id/DescriptionComboAseo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoComboAseo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="8dp"
+                    android:onClick="commingSoon"
+                    android:text="@string/agregarCarrito" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/tituloComboComida"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <ImageView
+                    android:id="@+id/imageComboComida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="226dp"
+                    app:srcCompat="@drawable/banner_productos_purina_mesa_de_trabajo_1_copia" />
+
+                <TextView
+                    android:id="@+id/DescriptionCombocomida"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/textoComboComidaPerro"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="commingSoon"
+                    android:text="@string/agregarCarrito"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/tituloComboBano"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <ImageView
+                    android:id="@+id/imageComboLavadoPerro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="400dp"
+                    app:srcCompat="@drawable/lavado_perros" />
+
+                <TextView
+                    android:id="@+id/DescriptionComboLavado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DescriptionComboLavado"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+                <Button
+                    android:id="@+id/buttonComboLavado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="commingSoon"
+                    android:text="@string/agregarCarrito" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
