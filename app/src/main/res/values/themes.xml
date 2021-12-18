@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.Reto2" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorToolbar</item>
-        <item name="colorPrimaryVariant">@color/colorToolbar</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/dark_blue</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Edicion del meni pop up -->
         <item name="popupMenuBackground">@drawable/customborder</item>

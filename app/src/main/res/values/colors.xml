@@ -13,4 +13,8 @@
     <color name="colorFondoRow">#D8DDB6</color>
     <color name="colorTitulos">#FFFFFF</color>
     <color name="colorToolbar">#22D195</color>
+
+    <color name="gray">#D6D6D6</color>
+    <color name="dark_blue">#0E1C4E</color>
+    <color name="blue">#293975</color>
 </resources>
