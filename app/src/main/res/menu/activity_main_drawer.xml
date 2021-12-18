@@ -19,6 +19,6 @@
         <item
             android:id="@+id/nav_sucursales"
             android:icon="@android:drawable/ic_menu_mylocation"
-            android:title="@string/menu_sucursales" />
+            android:title="@string/menu_contactos" />
     </group>
 </menu>

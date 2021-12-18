@@ -73,4 +73,7 @@ public class MainActivity extends AppCompatActivity {
         Snackbar.make(view,"Pronto podras obtener mas informacion",Snackbar.LENGTH_SHORT).show();
     }
 
+    public void verMap(View view){
+
+    }
 }
